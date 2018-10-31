@@ -1,0 +1,3 @@
+Notas generales:
+
+-El contenido de las gráficas se cambia en material-dashboard.js
