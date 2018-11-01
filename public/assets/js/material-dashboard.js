@@ -280,9 +280,9 @@ md = {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
-        labels: ['M', 'A', 'M', 'J', 'J', 'A'],
+        labels: ['Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.'],
         series: [
-          [30, 17, 7, 17, 23, 18]
+          [8867, 20327, 5718, 2393, 532, 130]
         ]
       };
 
@@ -291,12 +291,12 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 22000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
         chartPadding: {
           top: 0,
           right: 0,
           bottom: 0,
-          left: 0
+          left: 20
         },
       }
 
@@ -338,9 +338,9 @@ md = {
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       var dataWebsiteViewsChart = {
-        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+        labels: ['Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.'],
         series: [
-          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+          [8867, 20327, 5718, 2393, 532, 130]
 
         ]
       };
@@ -349,7 +349,7 @@ md = {
           showGrid: false
         },
         low: 0,
-        high: 1000,
+        high: 22000,
         chartPadding: {
           top: 0,
           right: 5,

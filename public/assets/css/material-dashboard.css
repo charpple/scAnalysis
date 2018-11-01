@@ -14,7 +14,7 @@
  */
 /*     brand Colors              */
 .card {
-  font-size: .875rem; }
+  font-size: .925rem; }
 
 *,
 *::before,
@@ -22,7 +22,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -37,7 +37,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -333,7 +333,7 @@ template {
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -3335,7 +3335,9 @@ tbody.collapse.show {
   border-top: 1px solid #eeeeee; }
   .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
-
+.card-footer p{
+  padding-left: 8px;
+}
 .card-header-tabs {
   margin-right: -0.625rem;
   margin-bottom: -0.75rem;
@@ -4074,7 +4076,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4159,7 +4161,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9244,7 +9246,7 @@ fieldset[disabled] .form-group .form-control {
     padding: 0.9375rem;
     font-weight: 400;
     font-size: 12px;
-    text-transform: uppercase;
+
     border-radius: 3px;
     line-height: 20px; }
     .navbar .navbar-nav .nav-item .nav-link:not(.btn-just-icon) .fa {
@@ -9631,7 +9633,7 @@ html * {
   -moz-osx-font-smoothing: grayscale; }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-weight: 300;
   line-height: 1.5em; }
 
@@ -10321,7 +10323,7 @@ h2.title {
     color: #3C4858;
     padding-left: 10px;
     padding-right: 10px;
-    text-transform: capitalize;
+  
     font-size: 13px;
     padding: 10px 15px; }
   .sidebar .sidebar-background {
@@ -10364,7 +10366,7 @@ h2.title {
       color: #fff;
       line-height: 20px; }
     .sidebar .logo .simple-text {
-      text-transform: uppercase;
+
       padding: 5px 0px;
       display: inline-block;
       font-size: 18px;
@@ -10404,8 +10406,8 @@ h2.title {
   .sidebar[data-background-color="black"] .nav li .dropdown-menu .dropdown-item {
     color: #fff; }
   .sidebar[data-color="purple"] li.active > a {
-    background-color: #9c27b0;
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4); }
+    background-color: #213E69;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(40, 63, 102, 0.4); }
   .sidebar[data-color="azure"] li.active > a {
     background-color: #00bcd4;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4); }
@@ -11367,7 +11369,7 @@ legend {
   border-bottom: 0; }
 
 .serif-font {
-  font-family: "Roboto Slab", "Times New Roman", serif; }
+  font-family: 'Advent Pro', sans-serif; }
 
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -11647,7 +11649,7 @@ label {
   .card .card-header-primary:not(.card-header-icon):not(.card-header-text), .card.bg-primary,
   .card.card-rotate.bg-primary .front,
   .card.card-rotate.bg-primary .back {
-    background: linear-gradient(60deg, #ab47bc, #8e24aa); }
+    background: linear-gradient(60deg, #203458, #213e69); }
   .card .card-header-info .card-icon,
   .card .card-header-info .card-text,
   .card .card-header-info:not(.card-header-icon):not(.card-header-text), .card.bg-info,
@@ -13022,3 +13024,6 @@ Copyright (c) 2015 Daniel Eden
     display: none !important; } }
 
 /*# sourceMappingURL=material-dashboard.css.map */
+.tCenter  {
+  text-align: center;
+}
