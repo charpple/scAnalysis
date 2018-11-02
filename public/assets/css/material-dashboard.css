@@ -11655,7 +11655,7 @@ label {
   .card .card-header-info:not(.card-header-icon):not(.card-header-text), .card.bg-info,
   .card.card-rotate.bg-info .front,
   .card.card-rotate.bg-info .back {
-    background: linear-gradient(60deg, #26c6da, #00acc1); }
+    background: linear-gradient(60deg, #385c99, #3962a8); }
   .card .card-header-success .card-icon,
   .card .card-header-success .card-text,
   .card .card-header-success:not(.card-header-icon):not(.card-header-text), .card.bg-success,
@@ -11668,6 +11668,7 @@ label {
   .card.card-rotate.bg-warning .front,
   .card.card-rotate.bg-warning .back {
     background: linear-gradient(60deg, #ffa726, #fb8c00); }
+
   .card .card-header-danger .card-icon,
   .card .card-header-danger .card-text,
   .card .card-header-danger:not(.card-header-icon):not(.card-header-text), .card.bg-danger,
@@ -11699,7 +11700,7 @@ label {
   .card .card-header-info .card-icon,
   .card .card-header-info:not(.card-header-icon):not(.card-header-text),
   .card .card-header-info .card-text {
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4); }
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(57, 98, 168, 0.4); }
   .card .card-header-success .card-icon,
   .card .card-header-success:not(.card-header-icon):not(.card-header-text),
   .card .card-header-success .card-text {
@@ -13026,4 +13027,7 @@ Copyright (c) 2015 Daniel Eden
 /*# sourceMappingURL=material-dashboard.css.map */
 .tCenter  {
   text-align: center;
+}
+iframe {border:5px;
+    border-radius: 20px !important;
 }
