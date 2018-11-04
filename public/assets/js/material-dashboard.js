@@ -110,7 +110,7 @@ function processData(allText) {
             lines.push(tarr);
         }
     }
-     alert(lines[0]);
+    // alert(lines[0]);
 }
 
 $(document).on('click', '.navbar-toggler', function() {
