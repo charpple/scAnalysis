@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Sticker Collector 2018 Analysis
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-2.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo">
+          <a href="index.html" class="simple-text logo-normal">
+        <img src="../assets/img/logos/logo_iOS.png"  height="35" width="35">
+
+        <b>Sticker Collector 2018</b>
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="../index.html">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <p>About Sticker Collector 2018</p>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./analytics.html">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <p>App Analytics</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./marketing.html">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+              <p>Sales & Marketing</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./icons.html">
+            <i class="fa fa-th-list" aria-hidden="true"></i>
+              <p>Process</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./typography.html">
+            <i class="fa fa-signal" aria-hidden="true"></i>
+              <p>Trends</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="./map.html">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              <p>Developer Team</p>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+
+            <h3 class="tabcontent">App Analytics</h3>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-chart">
+                <div class="card-header card-header-success">
+                  <div class="ct-chart" id="dailySalesChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Downloads per Month</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">38,116 total downloads</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-chart">
+                <div class="card-header card-header-secondary">
+                  <div class="ct-chart" id="dailyPurchasesChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">In-App Purchases per Month</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">1,609 total in-app purchases</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="card card-chart">
+                <div class="card-header card-header-warning">
+                  <div class="ct-chart" id="websiteViewsChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Downloads per Region</h4>
+
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                  <p class="card-category">03/01/18 - 08/31/18</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-rose">
+                  <h4 class="card-title">Top 10 iOS Downloads</h4>
+                  <p class="card-category">per country</p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-rose" align="center">
+                      <th >Territory</th>
+                      <th >Downloads</th>
+                      <th >In-App Purchases</th>
+                    </thead>
+                    <tbody>
+                      <tr align="center">
+                        <td>Mexico</td>
+                        <td>10,898</td>
+                        <td>766</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Brazil</td>
+                        <td>5,943</td>
+                        <td>95</td>
+                      </tr>
+                      <tr align="center">
+                        <td>United States</td>
+                        <td>5,552</td>
+                        <td>261</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Colombia</td>
+                        <td>3,982</td>
+                        <td>40</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Guatemala</td>
+                        <td>1,413</td>
+                        <td>22</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Peru</td>
+                        <td>1,378</td>
+                        <td>29</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Germany</td>
+                        <td>1,335</td>
+                        <td>118</td>
+                      </tr>
+                      <tr align="center">
+                        <td>United Kingdom</td>
+                        <td>1,074</td>
+                        <td>90</td>
+                      </tr>
+                      <tr align="center">
+                        <td>France</td>
+                        <td>731</td>
+                        <td>10</td>
+                      </tr>
+                      <tr align="center">
+                        <td>Costa Rica</td>
+                        <td>717</td>
+                        <td>16</td>
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+
+          <div class="copyright float-right">
+            <a href="https://www.creative-tim.com" target="_blank">Sticker Collector 2018</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-dashboard.js?v=2.1.0" type="text/javascript"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
+</body>
+
+</html>

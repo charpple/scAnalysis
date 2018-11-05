@@ -276,7 +276,7 @@ md = {
 
   initDashboardPageCharts: function() {
 
-    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0) {
+    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0 || $('#campaignChart').length != 0) {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
@@ -313,6 +313,13 @@ md = {
         ]
       };
 
+      dataCampaignChart = {
+        labels: ['Mar.', 'Apr.', 'May', 'Jun.'],
+        series: [
+          [174, 961, 331, 119]
+        ]
+      };
+
       optionsDailySalesChart = {
         lineSmooth: Chartist.Interpolation.cardinal({
           tension: 0
@@ -331,6 +338,9 @@ md = {
 
       md.startAnimationForLineChart(dailyPurchasesChart);
 
+      var campaignChart = new Chartist.Bar('#campaignChart', dataCampaignChart, optionsDailySalesChart);
+
+      md.startAnimationForLineChart(campaignChart);
 
 
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
