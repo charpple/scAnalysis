@@ -276,7 +276,7 @@ md = {
 
   initDashboardPageCharts: function() {
 
-    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0) {
+    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0) {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
@@ -304,6 +304,33 @@ md = {
 
       md.startAnimationForLineChart(dailySalesChart);
 
+      /* ----------==========     Daily Purchases Chart initialization    ==========---------- */
+
+      dataPurchasesChart = {
+        labels: ['Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.'],
+        series: [
+          [174, 961, 331, 119, 24, 0]
+        ]
+      };
+
+      optionsDailySalesChart = {
+        lineSmooth: Chartist.Interpolation.cardinal({
+          tension: 0
+        }),
+        low: 0,
+        high: 1100, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 20
+        },
+      }
+
+      var dailyPurchasesChart = new Chartist.Line('#dailyPurchasesChart', dataPurchasesChart, optionsDailySalesChart);
+
+      md.startAnimationForLineChart(dailyPurchasesChart);
+
 
 
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
@@ -323,7 +350,7 @@ md = {
         high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
         chartPadding: {
           top: 0,
-          right: 0,
+          right: 5,
           bottom: 0,
           left: 0
         }
@@ -338,9 +365,9 @@ md = {
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       var dataWebsiteViewsChart = {
-        labels: ['Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.'],
+        labels: ['Latin America', 'U.S. & Canada', 'European Union', 'Africa, Middle E. & India', 'Asia Pacific'],
         series: [
-          [8867, 20327, 5718, 2393, 532, 130]
+          [26362, 5863, 5379, 188, 175]
 
         ]
       };
@@ -348,13 +375,13 @@ md = {
         axisX: {
           showGrid: false
         },
-        low: 0,
-        high: 22000,
+        low: 175,
+        high: 35000,
         chartPadding: {
           top: 0,
-          right: 5,
+          right: 0,
           bottom: 0,
-          left: 0
+          left: 50
         }
       };
       var responsiveOptions = [
