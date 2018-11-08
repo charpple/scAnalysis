@@ -23,11 +23,7 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-2.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
-        Tip 2: you can also add an image using data-image tag
-    -->
       <div class="logo">
           <a href="index.html" class="simple-text logo-normal">
         <img src="../assets/img/logos/logo_iOS.png"  height="35" width="35">
@@ -98,44 +94,15 @@
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-
           <div class="row">
-            <div class="col-md-6">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="dailySalesChart"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Downloads per Month</h4>
-
-                </div>
-                <div class="card-footer">
-                  <p class="card-category">38,116 total downloads</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card card-chart">
-                <div class="card-header card-header-secondary">
-                  <div class="ct-chart" id="dailyPurchasesChart"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">In-App Purchases per Month</h4>
-
-                </div>
-                <div class="card-footer">
-                  <p class="card-category">1,609 total in-app purchases</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12">
+            <div class="col-md-8">
               <div class="card card-chart">
                 <div class="card-header card-header-warning">
-                  <div class="ct-chart" id="websiteViewsChart"></div>
+                  <div class="ct-chart " id="websiteViewsChart"></div>
+
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Downloads per Region</h4>
+                  <h4 class="card-title">Total Downloads per Region</h4>
 
                 </div>
                 <div class="card-footer">
@@ -144,8 +111,10 @@
                   </div>
                 </div>
               </div>
+
+
             </div>
-            <div class="col-md-12">
+            <div class="col-md-4">
               <div class="card">
                 <div class="card-header card-header-rose">
                   <h4 class="card-title">Top 10 iOS Downloads</h4>
@@ -215,6 +184,93 @@
 
               </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-chart">
+                <div class="card-header card-header-success">
+
+                  <div class="ct-chart" id="dailySalesChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Downloads per Month</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">38,116 total downloads</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card card-chart">
+                <div class="card-header card-header-success-dark">
+                  <div class="ct-chart ct-line" id="bestMonthChart"></div>
+                  <div class="ct-chart ct-line" id="bestMonthsChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Best Download Period | March 22nd - April 21st</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">25,778 downloads | 68% of total </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <br>
+              <div class="card card-chart">
+                <div class="card-header card-header-success">
+                  <center>
+                  <img src="../assets/img/lr1.png" width="100%">
+                </center>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Linear Regression</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">38,116 total downloads</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-chart">
+                <div class="card-header card-header-secondary">
+                  <div class="ct-chart" id="dailyPurchasesChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">In-App Purchases per Month</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">1,609 total in-app purchases</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+
+              <div class="card card-chart">
+                <div class="card-header card-header-secondary">
+                  <div class="ct-chart" id="bestSalesChart"></div>
+
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Best In-App Purchases Period | March 22nd - April 21st</h4>
+
+                </div>
+                <div class="card-footer">
+                  <p class="card-category">933 in-app purchases | 58%</p>
+                </div>
+              </div>
+            </div>
+
+
+
 
           </div>
 
@@ -224,6 +280,7 @@
         <div class="container-fluid">
 
           <div class="copyright float-right">
+
             <a href="https://www.creative-tim.com" target="_blank">Sticker Collector 2018</a>
           </div>
         </div>

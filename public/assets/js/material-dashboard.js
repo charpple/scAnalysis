@@ -276,7 +276,7 @@ md = {
 
   initDashboardPageCharts: function() {
 
-    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0 || $('#campaignChart').length != 0) {
+    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0 || $('#campaignChart').length != 0 || $('#bestMonthChart').length != 0) {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
@@ -303,6 +303,60 @@ md = {
       var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
 
       md.startAnimationForLineChart(dailySalesChart);
+
+      /* ----------==========     Daily Sales Chart initialization    ==========---------- */
+
+      dataBestMonthChart = {
+        labels: ['22', '23', '24', '25', '26', '27','28', '29', '30', '31', '1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20','21'],
+        series: [
+          [297,436,724,1131,1260,1177,1001,981,920,940,993,1151,1184,1040,949,782,842,970,908,865,726,761,632,873,741,673,709,600,553,421,538]
+        ]
+      };
+
+      optionsBestMonthChart = {
+        lineSmooth: Chartist.Interpolation.cardinal({
+          tension: 0
+        }),
+        low: 0,
+        high: 1050, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 20
+        },
+      }
+
+      var bestMonthChart = new Chartist.Line('#bestMonthChart', dataBestMonthChart, optionsBestMonthChart);
+
+      md.startAnimationForLineChart(bestMonthChart);
+
+      /* ----------==========     Daily Sales Chart initialization    ==========---------- */
+
+      dataBestSalesChart = {
+        labels: ['22', '23', '24', '25', '26', '27','28', '29', '30', '31', '1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20','21'],
+        series: [
+          [0,0,0,0,0,0,46,41,33,54,39,40,51,45,42,36,39,40,39,31,32,48,24,39,39,29,36,28,37,20,25]
+        ]
+      };
+
+      optionsBestSalesChart = {
+        lineSmooth: Chartist.Interpolation.cardinal({
+          tension: 0
+        }),
+        low: 0,
+        high: 60, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 20
+        },
+      }
+
+      var bestSalesChart = new Chartist.Line('#bestSalesChart', dataBestSalesChart, optionsBestSalesChart);
+
+      md.startAnimationForLineChart(bestSalesChart);
 
       /* ----------==========     Daily Purchases Chart initialization    ==========---------- */
 
@@ -375,7 +429,7 @@ md = {
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       var dataWebsiteViewsChart = {
-        labels: ['Latin America', 'U.S. & Canada', 'European Union', 'Africa, Middle E. & India', 'Asia Pacific'],
+        labels: ['Latin America', 'U.S. & Canada', 'European Union', "Africa, M.E. & India", 'Asia Pacific'],
         series: [
           [26362, 5863, 5379, 188, 175]
 
