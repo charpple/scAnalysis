@@ -276,7 +276,7 @@ md = {
 
   initDashboardPageCharts: function() {
 
-    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0 || $('#campaignChart').length != 0 || $('#bestMonthChart').length != 0) {
+    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0 || $('#dailyPurchasesChart').length != 0 || $('#campaignChart').length != 0 || $('#bestMonthChart').length != 0 || $('#adSalesChart').length != 0) {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
@@ -302,7 +302,7 @@ md = {
 
       var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
 
-      md.startAnimationForLineChart(dailySalesChart);
+
 
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
@@ -329,14 +329,14 @@ md = {
 
       var bestMonthChart = new Chartist.Line('#bestMonthChart', dataBestMonthChart, optionsBestMonthChart);
 
-      md.startAnimationForLineChart(bestMonthChart);
+
 
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataBestSalesChart = {
-        labels: ['22', '23', '24', '25', '26', '27','28', '29', '30', '31', '1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20','21'],
+        labels: ['28', '29', '30', '31', '1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20','21','22', '23', '24', '25', '26', '27'],
         series: [
-          [0,0,0,0,0,0,46,41,33,54,39,40,51,45,42,36,39,40,39,31,32,48,24,39,39,29,36,28,37,20,25]
+          [46,41,33,54,39,40,51,45,42,36,39,40,39,31,32,48,24,39,39,29,36,28,37,20,25,37,31,24,14,23,14]
         ]
       };
 
@@ -356,7 +356,7 @@ md = {
 
       var bestSalesChart = new Chartist.Line('#bestSalesChart', dataBestSalesChart, optionsBestSalesChart);
 
-      md.startAnimationForLineChart(bestSalesChart);
+
 
       /* ----------==========     Daily Purchases Chart initialization    ==========---------- */
 
@@ -367,10 +367,27 @@ md = {
         ]
       };
 
+      optionsPurchasesChart = {
+        lineSmooth: Chartist.Interpolation.cardinal({
+          tension: 0
+        }),
+        low: 0,
+        high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 20
+        },
+      }
+      var dailyPurchasesChart = new Chartist.Line('#dailyPurchasesChart', dataPurchasesChart, optionsPurchasesChart);
+
+
       dataCampaignChart = {
-        labels: ['Mar.', 'Apr.', 'May', 'Jun.'],
+        labels: ['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',
+                  '','','','','','','','D','','A','','Y','','S'],
         series: [
-          [174, 961, 331, 119]
+          [38.50,30.10,24.50,39.20,28.70,29.40,37.80,32.90,30.80,26.60,28.70,28.70,29.40,23.10,23.80,35.70,17.50,28.70,29.40,21.70,27.30,21.00,27.30,14.70,18.20,28.70,22.40,17.50,10.50,17.50,11.20,16.80,16.10,12.60,17.50,8.40,11.90,7.00,9.10,12.60,11.90,14.70,7.70,7.00,10.50,13.30,12.60,10.50,5.60,9.10,7.00,4.20,6.30,11.20,10.50,6.30,7.70,1.40,5.60,3.50,4.20,6.30,7.00,4.90,4.20,7.00,7.00,4.20,3.50,2.80,2.80,4.90,2.80,4.20,4.90,1.40,3.50,0.70,2.80,0.70,7.00,3.50,2.10,2.80,1.40,2.10,2.10,2.80,0.70,2.80,2.10,3.50,3.50,0.00,0.70,0.70,2.10,0.70,0.00,1.40,0.70,0.00,2.10,0.00,0.70,0.70,1.40,0.00,0.70,1.40,0.00,0.00,0.00,0.00,1.40,2.10,0.70,0.00,0.00,0.70,0.00,0.00,0.00,0.00,0.00,0.70,0.00]
         ]
       };
 
@@ -379,7 +396,7 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 1100, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 45, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
         chartPadding: {
           top: 0,
           right: 0,
@@ -388,13 +405,13 @@ md = {
         },
       }
 
-      var dailyPurchasesChart = new Chartist.Line('#dailyPurchasesChart', dataPurchasesChart, optionsDailySalesChart);
 
-      md.startAnimationForLineChart(dailyPurchasesChart);
 
-      var campaignChart = new Chartist.Bar('#campaignChart', dataCampaignChart, optionsDailySalesChart);
 
-      md.startAnimationForLineChart(campaignChart);
+
+      var campaignChart = new Chartist.Line('#campaignChart', dataCampaignChart, optionsDailySalesChart);
+
+
 
 
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
@@ -423,7 +440,7 @@ md = {
       var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
 
       // start animation for the Completed Tasks Chart - Line Chart
-      md.startAnimationForLineChart(completedTasksChart);
+
 
 
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
@@ -461,9 +478,44 @@ md = {
       var websiteViewsChart = Chartist.Bar('#websiteViewsChart', dataWebsiteViewsChart, optionsWebsiteViewsChart, responsiveOptions);
 
       //start animation for the Emails Subscription Chart
-      md.startAnimationForBarChart(websiteViewsChart);
+      //md.startAnimationForBarChart(websiteViewsChart);
+
+
+      var dataAds = {
+        labels: ['March', 'April', 'May', 'June', 'July','August'],
+        series: [
+          [2838, 10831, 6797, 3548,838,182]
+
+        ]
+      };
+      var optionsAds = {
+        axisX: {
+          showGrid: false
+        },
+        low: 175,
+        high: 11000,
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 30
+        }
+      };
+      var responsiveOptions = [
+        ['screen and (max-width: 640px)', {
+          seriesBarDistance: 5,
+          axisX: {
+            labelInterpolationFnc: function(value) {
+              return value[0];
+            }
+          }
+        }]
+      ];
+      var adsChart = Chartist.Bar('#adSalesChart', dataAds, optionsAds, responsiveOptions);
+
     }
   },
+
 
   initMinimizeSidebar: function() {
 
@@ -596,6 +648,8 @@ md = {
     seq2 = 0;
   }
 }
+
+
 
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for

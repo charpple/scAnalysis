@@ -11685,6 +11685,12 @@ label {
     .card.card-rotate.bg-success .front,
     .card.card-rotate.bg-success .back {
       background: linear-gradient(60deg, #43a047, #326834); }
+      .card .card-header-linear .card-icon,
+      .card .card-header-linear .card-text,
+      .card .card-header-linear:not(.card-header-icon):not(.card-header-text), .card.bg-success,
+      .card.card-rotate.bg-success .front,
+      .card.card-rotate.bg-success .back {
+        background: linear-gradient(60deg, #7621d1, #6416b7); }
   .card .card-header-warning .card-icon,
   .card .card-header-warning .card-text,
   .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning,
@@ -11738,6 +11744,10 @@ label {
     .card .card-header-success-dark:not(.card-header-icon):not(.card-header-text),
     .card .card-header-success-dark .card-text {
       box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4); }
+      .card .card-header-linear .card-icon,
+      .card .card-header-linear:not(.card-header-icon):not(.card-header-text),
+      .card .card-header-linear .card-text {
+        box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(86, 14, 163, 0.4); }
   .card [class*="card-header-"], .card[class*="bg-"] {
     color: #fff; }
     .card [class*="card-header-"] .card-title a,
@@ -13095,4 +13105,11 @@ height: 100%;
 }
 .tabcontent{
   padding-left: 15px;
+}
+
+.ylabel{
+  padding-left: 100px;
+  text-align: right;
+  text-align-last: right;
+  text-transform: bold;
 }
